@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :shell, :path => "bootstrap.sh" 
   config.vm.network :forwarded_port, host: 4567, guest: 80
-  config.vm.network :private_network, ip: "192.168.0.15"
+  config.vm.network :private_network, ip: "192.168.66.15"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
